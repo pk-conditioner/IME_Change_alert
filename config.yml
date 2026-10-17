@@ -1,0 +1,8 @@
+popup:
+  font_size: 48
+  width: 120
+  height: 120
+  opacity: 0.8 #透明度
+  duration: 0.6 #表示秒数
+  bg_color: "#333333"
+  text_color: "#FFFFFF"
