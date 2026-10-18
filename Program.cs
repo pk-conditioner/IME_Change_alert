@@ -11,6 +11,8 @@ static class Program
         // To customize application configuration such as set high DPI settings or default font,
         // see https://aka.ms/applicationconfiguration.
         ApplicationConfiguration.Initialize();
-        Application.Run(new Form1());
+        Thread.Sleep(3000); //IME切替確認用(この時間内にIMEの動作確認をする)
+        Console.WriteLine(ImeStatus.IsOpen());
+        Application.Run(new PopupForm());
     }    
 }
