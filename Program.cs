@@ -13,6 +13,9 @@ static class Program
         ApplicationConfiguration.Initialize();
         Thread.Sleep(3000); //IME切替確認用(この時間内にIMEの動作確認をする)
         Console.WriteLine(ImeStatus.IsOpen());
-        Application.Run(new PopupForm());
+        var popup = new PopupForm();
+        popup.ShowPopup("あ");
+        Application.Run();
+        
     }    
 }
