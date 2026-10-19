@@ -24,6 +24,8 @@ IME(日本語入力)のON/OFFが切り替わった瞬間に、画面中央へ「
 git clone [<リポジトリURL>](https://github.com/pk-conditioner/IME_Change_alert.git)
 cd IME_Change_alert
 dotnet run
+
+※終了はターミナルで Ctrl+C(トレイからの終了は実装予定)」
 ```
 
 ## 設定(appsettings.json)
@@ -34,7 +36,7 @@ dotnet run
 | Opacity | 透明度 | 0.8 |
 | Duration | 表示秒数 | 0.6 |
 | BgColor / TextColor | 背景色 / 文字色 | "#333333" / "#FFFFFF" |
-<!-- 実際のキー名は実装に合わせて直す -->
+
 
 ## 仕組み
 前面ウィンドウ → `ImmGetDefaultIMEWnd` で IME ウィンドウを取得 → `SendMessageTimeoutW(WM_IME_CONTROL, IMC_GETOPENSTATUS)` で ON/OFF を問い合わせています。
