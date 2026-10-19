@@ -3,7 +3,7 @@
 IME(日本語入力)のON/OFFが切り替わった瞬間に、画面中央へ「あ / A」を一瞬ポップアップ表示する Windows 常駐ツールです。
 
 ## 作った理由
-<!-- 入力モードの切り替えに気づかず打ち間違えることが多々あったので、その改善と学習を兼ねて -->
+ 入力モードの切り替えに気づかず打ち間違えることが多々あったので、その改善と学習を兼ねて 
 
 ## 機能
 | 機能 | 状態 |
@@ -21,8 +21,8 @@ IME(日本語入力)のON/OFFが切り替わった瞬間に、画面中央へ「
 
 ### 実行
 ```
-git clone <リポジトリURL>
-cd <フォルダ名>
+git clone [<リポジトリURL>](https://github.com/pk-conditioner/IME_Change_alert.git)
+cd IME_Change_alert
 dotnet run
 ```
 
